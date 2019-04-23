@@ -1,0 +1,30 @@
+.similar {
+    padding: 80px 23%;
+    
+    @include tablet {
+        padding: 80px 10%;
+    }
+}
+
+.similar__title {
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    color: #222;
+    margin-bottom: 20px;
+    
+    @include phone {
+        font-size: 30px;
+    }
+}
+
+.similar__desc {
+     font-family: roboto, helvetica, sans-serif;
+    line-height: 26px;
+    color: #4E4D53;    
+   
+    
+}
+
+.similar__text {
+    margin-bottom: 30px;
+}

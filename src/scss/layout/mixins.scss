@@ -1,0 +1,34 @@
+@function rem($px: 16px) {
+    @return ($px / 16px) + rem;
+}
+
+@mixin netbook {
+	@media screen and (max-width: 1300px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width: 1050px) {
+		@content;
+	}
+}
+
+
+@mixin tablet-s {
+	@media screen and (max-width: 850px) {
+		@content;
+	}
+}
+
+@mixin phone-b {
+	@media screen and (max-width: 620px) {
+		@content;
+	}
+}
+@mixin phone {
+	@media screen and (max-width: 490px) {
+		@content;
+	}
+}
+
+$orange: #F47821;

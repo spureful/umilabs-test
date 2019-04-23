@@ -1,0 +1,95 @@
+.promo {
+    min-height: 305px;
+  
+
+}
+
+.promo__block {
+    max-width: 700px;
+    margin: 170px auto 0;
+    
+    text-align: center;
+    @include tablet-s  {
+     width: 70%;
+     
+        margin: 100px auto 0;
+     
+        
+    }
+    
+}
+
+.promo__title {
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    color: #222;
+    
+    @include tablet-s  {
+      font-size: 30px;
+    }
+}
+
+.promo__text {
+    font-family: roboto, helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 35px;
+    
+     @include tablet-s  {
+      font-size: 14px;
+    }
+}
+
+.promo__text-orange {
+    color: $orange;
+    font-weight: 700;
+
+}
+
+.promo__btn {
+    display: inline-block;
+
+    border-radius: 30px;
+
+    background-color: #fff;
+    padding: 20px;
+    padding-left: 50px;
+    margin-left: 20px;
+
+    font-family: Gilroy, helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    position: relative;
+    transition: background-color 0.7s;
+
+    &:before {
+        content: '';
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: rgba(#878787, 0.05);
+        background-image: url(../img/icons/Union.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+
+        transition: background-color 0.7s;
+
+    }
+
+    &:hover {
+        background-color: rgba(#878787, 0.05);
+    }
+
+    &:hover:before {
+        background-color: transparent;
+    }
+}
